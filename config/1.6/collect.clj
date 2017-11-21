@@ -6,7 +6,7 @@
   ;; Relative path in repo to Clojure source
   "src/clj"
 
-  ;; Analyze these namespaces
+  ;; Analyze these namespaces 
   "clojure.core:clojure.core.protocols:clojure.core.reducers:clojure.data:clojure.edn:clojure.inspector:clojure.instant:clojure.java.browse:clojure.java.io:clojure.java.javadoc:clojure.java.shell:clojure.main:clojure.pprint:clojure.reflect:clojure.repl:clojure.set:clojure.stacktrace:clojure.string:clojure.template:clojure.test:clojure.walk:clojure.xml:clojure.zip"
 
   ;; Skip these namespaces
@@ -19,4 +19,4 @@
   "analysis.edn"
 
   ;; Branch name
-  "v1.7")
+  "v1.6")
