@@ -2,12 +2,14 @@
 
 set -e
 
+branch=master
+
 # Run autodoc-collect
-git -C ../../repo co master
+git -C ../../repo co "$branch"
 rm -f analysis.edn
-echo "Analyzing"
-cat collect.clj | clojure -
+echo "Analyzing $branch"
+cat collect.clj | clojure -C:collect -
 
 # Run autodoc
-echo "Building"
-cat build.clj | clojure -
+echo "Building $branch"
+cat build.clj | clojure -R:build -

@@ -2,12 +2,14 @@
 
 set -e
 
+branch=1.2.x
+
 # Run autodoc-collect
-git -C ../../repo checkout 1.2.x
+git -C ../../repo checkout "$branch"
 rm -f analysis.edn
-echo "Analyzing"
+echo "Analyzing $branch"
 cat collect.clj | clojure -C:collect -
 
 # Run autodoc
-echo "Building"
+echo "Building $branch"
 cat build.clj | clojure -R:build -

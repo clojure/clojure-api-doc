@@ -1,5 +1,6 @@
 (require '[autodoc.build-html :as h] 
          '[autodoc.params :as p]
+         '[autodoc.doc-files :as d]
          '[clojure.edn :as e]) 
 (import [java.io PushbackReader FileReader File]) 
 
@@ -19,3 +20,5 @@
   {:name "clojure-1.8.0" :version "v1.8" :status "stable" :first? true}
   (:branches shared) 
   (edn-read "analysis.edn"))
+
+(d/xform-tree "../../repo/doc" "../../repo-docs/doc")
