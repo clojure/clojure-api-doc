@@ -1,11 +1,10 @@
 { ;; Build parameters shared across all branches
   :name "Clojure"
   :page-title "Clojure Core API Reference"
-  :copyright "Copyright 2007-2017 Rich Hickey"
+  :copyright "Copyright 2007-2017 by Rich Hickey"
   :web-home "https://clojure.github.io/clojure/"
   :external-doc-tmpdir "tmp"
   :file-prefix ""
-  :output-path "../../repo-docs/"
   :build-json-index false
   :build-raw-index false
   :scm-tool "git"

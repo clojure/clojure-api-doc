@@ -13,12 +13,12 @@
 
 (p/merge-params
   (merge shared    
-    {:root (.getAbsolutePath (File. "../../repo/"))
+    {:root (str (.getAbsolutePath (File. "../../repo")) "/")
+     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")
      :template-dir "old-templates"}))
 
-(h/make-all-pages 
-  {:name "1.2.x" :version "v1.2" :status "legacy"}
-  (:branches shared)
-  (edn-read "analysis.edn"))
+(let [branch-info {:name "1.2.x" :version "v1.2" :status "legacy"}
+      all-branch-info (:branches shared)]
 
-(d/xform-tree "../../repo/doc" "../../repo-docs/branch-1.2.x/doc")
+  (d/xform-tree "../../repo/doc" "../../repo-docs/branch-1.2.x/doc")
+  (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))

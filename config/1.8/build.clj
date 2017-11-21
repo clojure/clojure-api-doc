@@ -13,12 +13,12 @@
 
 (p/merge-params
   (merge shared    
-    {:root (.getAbsolutePath (File. "../../repo/"))
+    {:root (str (.getAbsolutePath (File. "../../repo")) "/")
+     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")
      :template-dir "templates"}))
 
-(h/make-all-pages
-  {:name "clojure-1.8.0" :version "v1.8" :status "stable" :first? true}
-  (:branches shared) 
-  (edn-read "analysis.edn"))
+(let [branch-info {:name "clojure-1.8.0" :version "v1.8" :status "stable" :first? true}
+      all-branch-info (:branches shared)]
 
-(d/xform-tree "../../repo/doc" "../../repo-docs/doc")
+  (d/xform-tree "../../repo/doc" "../../repo-docs/doc")
+  (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))

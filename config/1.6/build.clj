@@ -12,13 +12,13 @@
 (def shared (edn-read "../params.clj"))
 
 (p/merge-params
-  (merge shared    
-    {:root (.getAbsolutePath (File. "../../repo/"))
+  (merge shared
+    {:root (str (.getAbsolutePath (File. "../../repo")) "/")
+     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")
      :template-dir "templates"}))
 
-(h/make-all-pages 
-  {:name "clojure-1.6.0" :version "v1.6" :status "legacy"}
-  (:branches shared)
-  (edn-read "analysis.edn"))
+(let [branch-info {:name "clojure-1.6.0" :version "v1.6" :status "legacy"}
+      all-branch-info (:branches shared)]
 
-(d/xform-tree "../../repo/doc" "../../repo-docs/branch-clojure-1.6.0/doc")
+  (d/xform-tree "../../repo/doc" "../../repo-docs/branch-clojure-1.6.0/doc")
+  (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))
