@@ -16,6 +16,6 @@
      :template-dir "templates"}))
 
 (h/make-all-pages
-	{:name "clojure-1.8.0" :version "v1.8" :status "stable"} 
+  {:name "clojure-1.8.0" :version "v1.8" :status "stable" :first? true}
   (:branches shared) 
-	(edn-read "analysis.edn"))
+  (edn-read "analysis.edn"))
