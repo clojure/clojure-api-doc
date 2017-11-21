@@ -27,7 +27,7 @@ echo "Copying static site files"
 cp -R site/* repo-docs
 
 # Build all branches
-for branch in config/*
+for branch in config/*/
 do
   echo "Building $branch"
   cd "$branch"
