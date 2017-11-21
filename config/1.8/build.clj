@@ -13,7 +13,6 @@
 (p/merge-params
   (merge shared    
     {:root (.getAbsolutePath (File. "../../repo/"))
-     :output-path "../../repo-docs"
      :template-dir "templates"}))
 
 (h/make-all-pages

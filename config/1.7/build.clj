@@ -13,7 +13,6 @@
 (p/merge-params
   (merge shared    
     {:root (.getAbsolutePath (File. "../../repo/"))
-     :output-path "../../repo-docs/branch-clojure-1.7.0"
      :template-dir "templates"}))
 
 (h/make-all-pages 
