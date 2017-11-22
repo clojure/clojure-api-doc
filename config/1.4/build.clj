@@ -14,8 +14,7 @@
 (p/merge-params
   (merge shared    
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
-     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")
-     :template-dir "old-templates"}))
+     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
 (let [branch-info {:name "clojure-1.4.0" :version "v1.4" :status "legacy"}
       all-branch-info (:branches shared)]

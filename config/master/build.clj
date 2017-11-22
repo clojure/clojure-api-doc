@@ -14,8 +14,7 @@
 (p/merge-params
   (merge shared
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
-     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")
-     :template-dir "templates"}))
+     :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
 (let [branch-info {:name "master" :version "v1.9" :status "in development"}
       all-branch-info (:branches shared)]
