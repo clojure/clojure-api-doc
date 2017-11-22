@@ -36,8 +36,11 @@ do
 done	
 
 # Commit
-echo "Committing updated gh-pages branch"
-# cd repo-docs
-# git commit -a -m "Update docs"
-# git push
-# cd ..
+if [[ ! -z "$COMMIT" ]]; then
+  echo "Committing updated gh-pages branch"
+  cd repo-docs
+  git add -u -v
+  git commit -m "Autodoc commit"
+  git push
+  cd ..
+fi
