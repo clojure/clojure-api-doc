@@ -1,0 +1,4 @@
+cli/** linguist-vendored
+site/** linguist-vendored
+templates/** linguist-vendored
+*.edn linguist-language=Clojure
