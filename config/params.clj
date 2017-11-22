@@ -2,6 +2,7 @@
   :name "Clojure"
   :page-title "Clojure Core API Reference"
   :copyright "Copyright 2007-2017 by Rich Hickey"
+  :source-path ["src/clj"]
   :web-home "https://clojure.github.io/clojure/"
   :web-src-dir "https://github.com/clojure/clojure/blob/"
   :external-doc-tmpdir "tmp"
