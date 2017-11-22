@@ -5,7 +5,7 @@ set -e
 branch=1.2.x
 
 # Run autodoc-collect
-git -C ../../repo checkout "$branch"
+(cd ../../repo && git checkout "$branch")
 rm -f analysis.edn
 echo "Analyzing $branch"
 cat collect.clj | clojure -C:collect -
