@@ -16,8 +16,8 @@
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
      :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
-(let [branch-info {:name "clojure-1.8.0" :version "v1.8" :status "stable" :first? true}
+(let [branch-info {:name "clojure-1.8.0" :version "v1.8" :status "legacy"}
       all-branch-info (:branches shared)]
 
-  (d/xform-tree "../../repo/doc" "../../repo-docs/doc")
+  (d/xform-tree "../../repo/doc" "../../branch-clojure-1.8.0/repo-docs/doc")
   (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))

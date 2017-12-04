@@ -8,7 +8,7 @@ if [[ ! -d repo ]]; then
   git clone git@github.com:clojure/clojure.git repo
 else
   echo "Refreshing clojure repo area"
-  (cd repo && git fetch && git reset --hard)
+  (cd repo && git pull && git reset --hard)
 fi
 
 # Create or clean output directory
@@ -18,7 +18,7 @@ if [[ ! -d repo-docs ]]; then
   (cd repo-docs && git checkout gh-pages)
 else
   echo "Refreshing clojure gh-pages area"
-  (cd repo-docs && git fetch && git reset --hard)
+  (cd repo-docs && git fetch && git clean -d -f && git pull)
 fi
 rm -rf repo-docs/*
 
