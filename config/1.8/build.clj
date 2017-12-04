@@ -19,5 +19,5 @@
 (let [branch-info {:name "clojure-1.8.0" :version "v1.8" :status "legacy"}
       all-branch-info (:branches shared)]
 
-  (d/xform-tree "../../repo/doc" "../../branch-clojure-1.8.0/repo-docs/doc")
+  (d/xform-tree "../../repo/doc" "../../repo-docs/branch-clojure-1.8.0/doc")
   (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))
