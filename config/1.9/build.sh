@@ -2,7 +2,7 @@
 
 set -e
 
-branch=master
+branch=clojure-1.9.0
 
 # Run autodoc-collect
 (cd ../../repo && git checkout "$branch")

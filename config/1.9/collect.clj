@@ -19,4 +19,4 @@
   "analysis.edn"
 
   ;; Branch name
-  "master")
+  "clojure-1.9.0")
