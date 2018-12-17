@@ -12,12 +12,12 @@
 (def shared (edn-read "../params.clj"))
 
 (p/merge-params
-  (merge shared
+  (merge shared    
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
      :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
-(let [branch-info {:name "master" :version "v1.11" :status "in development"}
+(let [branch-info {:name "clojure-1.10.0" :version "v1.10" :status "stable" :first? true}
       all-branch-info (:branches shared)]
 
-  (d/xform-tree "../../repo/doc" "../../repo-docs/branch-master/doc")
+  (d/xform-tree "../../repo/doc" "../../repo-docs/doc")
   (h/make-all-pages branch-info all-branch-info (edn-read "analysis.edn")))

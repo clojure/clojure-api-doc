@@ -2,7 +2,7 @@
  :paths []
 
  :deps {
-   org.clojure/clojure {:mvn/version "1.11.0-master-SNAPSHOT"}
+   org.clojure/clojure {:mvn/version "1.10.0"}
    autodoc/autodoc {:mvn/version "1.1.2"}
  }
 
@@ -14,6 +14,5 @@
  :mvn/repos {
    "central" {:url "https://repo1.maven.org/maven2/"}
    "clojars" {:url "https://clojars.org/repo/"}
-   "sonatype-oss-public" {:url "https://oss.sonatype.org/content/groups/public/"}
  }
 }
