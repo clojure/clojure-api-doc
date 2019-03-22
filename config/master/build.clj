@@ -16,7 +16,7 @@
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
      :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
-(let [branch-info {:name "master" :version "v1.11" :status "in development"}
+(let [branch-info {:name "master" :version "v1.10.1" :status "in development"}
       all-branch-info (:branches shared)]
 
   (d/xform-tree "../../repo/doc" "../../repo-docs/branch-master/doc")
