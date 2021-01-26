@@ -2,7 +2,7 @@
 
 set -e
 
-branch=clojure-1.10.1
+branch=clojure-1.10.2
 
 # Run autodoc-collect
 (cd ../../repo && git checkout "$branch")
