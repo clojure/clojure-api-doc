@@ -8,7 +8,6 @@ branch=1.1.x
 (cd ../../repo && git checkout "$branch")
 rm -f analysis.edn
 echo "Analyzing $branch"
-clojure -Sforce -Sdescribe
 clojure -Sforce -M:collect collect.clj
 
 # Run autodoc
