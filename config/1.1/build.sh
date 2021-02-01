@@ -8,8 +8,9 @@ branch=1.1.x
 (cd ../../repo && git checkout "$branch")
 rm -f analysis.edn
 echo "Analyzing $branch"
-cat collect.clj | clojure -M:collect -
+clojure -Spath
+clojure -M:collect collect.clj
 
 # Run autodoc
 echo "Building $branch"
-cat build.clj | clojure -M:build -
+clojure -M:build build.clj
