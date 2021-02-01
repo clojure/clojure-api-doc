@@ -243,7 +243,7 @@ END
 fi
 
 # Set dir containing the installed files
-install_dir=/usr/local/Cellar/clojure/1.10.2.774
+install_dir="$CLJ_INSTALL"
 tools_cp="$install_dir/libexec/clojure-tools-1.10.2.774.jar"
 
 # Determine user config directory
