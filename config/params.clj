@@ -1,7 +1,7 @@
 { ;; Build parameters shared across all branches
   :name "Clojure"
   :page-title "Clojure Core API Reference"
-  :copyright "Copyright 2007-2019 by Rich Hickey"
+  :copyright "Copyright 2007-2021 by Rich Hickey"
   :source-path ["src/clj"]
   :param-dir "../.."
   :template-dir "templates"
