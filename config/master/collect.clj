@@ -7,7 +7,7 @@
   "src/clj"
 
   ;; Analyze these namespaces 
-  "clojure.core:clojure.core.protocols:clojure.core.reducers:clojure.core.server:clojure.data:clojure.datafy:clojure.edn:clojure.inspector:clojure.instant:clojure.java.browse:clojure.java.io:clojure.java.javadoc:clojure.java.shell:clojure.main:clojure.pprint:clojure.reflect:clojure.repl:clojure.set:clojure.stacktrace:clojure.string:clojure.template:clojure.test:clojure.walk:clojure.xml:clojure.zip"
+  "clojure.core:clojure.core.protocols:clojure.core.reducers:clojure.core.server:clojure.data:clojure.datafy:clojure.edn:clojure.inspector:clojure.instant:clojure.java.browse:clojure.java.io:clojure.java.javadoc:clojure.java.math:clojure.java.shell:clojure.main:clojure.pprint:clojure.reflect:clojure.repl:clojure.set:clojure.stacktrace:clojure.string:clojure.template:clojure.test:clojure.walk:clojure.xml:clojure.zip"
 
   ;; Skip these namespaces
   "clojure/core.clj:clojure/parallel.clj"
