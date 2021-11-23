@@ -12,7 +12,7 @@
   :build-json-index false
   :build-raw-index false
   :scm-tool "git"
-  :branches [{:name "clojure-1.10.2" :version "v1.10.2" :status "stable"}
+  :branches [{:name "clojure-1.10.3" :version "v1.10.3" :status "stable"}
              {:name "master" :version "v1.11" :status "in development"}
              {:name "clojure-1.9.0" :version "v1.9" :status "legacy"}
              {:name "clojure-1.8.0" :version "v1.8" :status "legacy"}

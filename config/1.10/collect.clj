@@ -19,4 +19,4 @@
   "analysis.edn"
 
   ;; Branch name
-  "clojure-1.10.2")
+  "clojure-1.10.3")
