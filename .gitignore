@@ -3,3 +3,4 @@ analysis.edn
 /config.clj
 /repo/
 /repo-docs/
+.java-version

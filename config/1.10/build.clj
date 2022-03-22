@@ -16,7 +16,7 @@
     {:root (str (.getAbsolutePath (File. "../../repo")) "/")
      :output-path (str (.getAbsolutePath (File. "../../repo-docs")) "/")}))
 
-(let [branch-info {:name "clojure-1.10.3" :version "v1.10.3" :status "stable" :first? true}
+(let [branch-info {:name "clojure-1.10.3" :version "v1.10.3" :status "legacy" :first? false}
       all-branch-info (:branches shared)]
 
   (d/xform-tree "../../repo/doc" "../../repo-docs/doc")
