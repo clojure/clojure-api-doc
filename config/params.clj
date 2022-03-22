@@ -1,7 +1,7 @@
 { ;; Build parameters shared across all branches
   :name "Clojure"
   :page-title "Clojure Core API Reference"
-  :copyright "Copyright 2007-2021 by Rich Hickey"
+  :copyright "Copyright 2007-2022 by Rich Hickey"
   :source-path ["src/clj"]
   :param-dir "../.."
   :template-dir "templates"
@@ -12,8 +12,9 @@
   :build-json-index false
   :build-raw-index false
   :scm-tool "git"
-  :branches [{:name "clojure-1.10.3" :version "v1.10.3" :status "stable"}
-             {:name "master" :version "v1.11" :status "in development"}
+  :branches [{:name "clojure-1.11.0" :version "v1.11" :status "stable"}
+             {:name "master" :version "v1.12" :status "in development"}
+             {:name "clojure-1.10.3" :version "v1.10.3" :status "legacy"}
              {:name "clojure-1.9.0" :version "v1.9" :status "legacy"}
              {:name "clojure-1.8.0" :version "v1.8" :status "legacy"}
              {:name "clojure-1.7.0" :version "v1.7" :status "legacy"}
