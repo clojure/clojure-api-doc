@@ -4,7 +4,8 @@
  :deps {
    org.clojure/clojure {:mvn/version "1.1.0"}
    autodoc/autodoc-collect {:git/url "https://github.com/cognitect-labs/autodoc-collect.git"
-                            :git/sha "45acdfce64019ebcb86af981f375929174829bea"}
+                            :git/sha "668c67f1d1a744cfe5f6543ebc430819d214f978"}
+;;                            :git/sha "45acdfce64019ebcb86af981f375929174829bea"}
    autodoc/autodoc {:mvn/version "1.1.2"}
  }
 
