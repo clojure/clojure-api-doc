@@ -3,6 +3,8 @@
 
  :deps {
    org.clojure/clojure {:mvn/version "1.4.0"}
+   autodoc/autodoc-collect {:git/url "https://github.com/cognitect-labs/autodoc-collect.git"
+                            :git/sha "45acdfce64019ebcb86af981f375929174829bea"}
    autodoc/autodoc {:mvn/version "1.1.2"}
  }
 
