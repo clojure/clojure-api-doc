@@ -2,7 +2,7 @@
 
 set -e
 
-install_dir=/usr/local/Cellar/clojure@1.11.1.1182/1.11.1.1182
+install_dir=/var/lib/jenkins/jobs/clojure-api-doc/workspace/cli
 version=1.11.1.1182
 
 function join { local d=$1; shift; echo -n "$1"; shift; printf "%s" "${@/#/$d}"; }
