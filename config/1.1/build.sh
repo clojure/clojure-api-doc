@@ -10,6 +10,9 @@ rm -f analysis.edn
 echo "Analyzing $branch"
 clojure -Spath -Sforce -M:collect collect.clj
 
+echo "Dump debug file"
+cat /tmp/autodoc-debug.clj
+
 # Run autodoc
 echo "Building $branch"
 clojure -Sforce -M:build build.clj
