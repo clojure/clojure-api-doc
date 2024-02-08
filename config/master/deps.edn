@@ -2,7 +2,7 @@
  :paths []
 
  :deps {
-   org.clojure/clojure {:mvn/version "1.12.0-alpha2"}
+   org.clojure/clojure {:mvn/version "1.12.0-alpha6"}
    autodoc/autodoc-collect {:git/url "https://github.com/cognitect-labs/autodoc-collect.git"
                             :git/sha "45acdfce64019ebcb86af981f375929174829bea"}
    autodoc/autodoc {:mvn/version "1.1.2"}
