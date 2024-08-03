@@ -2,7 +2,7 @@
  :paths []
 
  :deps {
-   org.clojure/clojure {:mvn/version "1.11.3"}
+   org.clojure/clojure {:mvn/version "1.11.4"}
    autodoc/autodoc-collect {:git/url "https://github.com/cognitect-labs/autodoc-collect.git"
                             :git/sha "45acdfce64019ebcb86af981f375929174829bea"}
    autodoc/autodoc {:mvn/version "1.1.2"}
@@ -10,7 +10,7 @@
 
  :aliases {
    :collect {:extra-paths ["../../repo/src/clj"]}
-   :build {:override-deps {org.clojure/clojure {:mvn/version "1.11.3"}}}
+   :build {:override-deps {org.clojure/clojure {:mvn/version "1.11.4"}}}
  }
 
  :mvn/repos {
