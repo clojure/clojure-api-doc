@@ -16,6 +16,5 @@
  :mvn/repos {
    "central" {:url "https://repo1.maven.org/maven2/"}
    "clojars" {:url "https://clojars.org/repo/"}
-   "sonatype-oss-public" {:url "https://oss.sonatype.org/content/groups/public/"}
  }
 }
